@@ -1,0 +1,110 @@
+{
+  "name": "Quote3",
+  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/quote3/template.json",
+  "preview": "sharepic/templates/quote3/preview.jpg",
+  "documents": [
+    {
+      "width": 1200,
+      "height": 1200,
+      "src": "sharepic/templates/quote3/1200x1200.svg",
+      "alias": "Facebook, Instagram"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Jost",
+      "src": "fonts/Jost/Jost-600-Semi.ttf",
+      "mime": "font/truetype"
+    },
+    {
+      "name": "Jost-400",
+      "src": "fonts/Jost/Jost-400-Book.ttf",
+      "mime": "font/truetype"
+    },
+    {
+      "name": "Merriweather",
+      "src": "fonts/Merriweather Sans.ttf",
+      "mime": "font/truetype"
+    }
+  ],
+  "fields": [
+    {
+      "type": "selection",
+      "description": "Background",
+      "key": "backgroundImage",
+      "default": {
+        "value": "sharepic/templates/quote3/default.jpg"
+      },
+      "properties": {
+        "items": [
+          {
+            "type": "file"
+          }
+        ]
+      }
+    },
+        {
+      "type": "checklist",
+      "description": "Effekte",
+      "key": "effects",
+      "default": [true],
+      "properties": {
+        "fields": [
+          "Verdunkelt"
+        ]
+      }
+    },
+    {
+      "type": "number",
+      "description": "Position",
+      "key": "pos",
+      "default": 0,
+      "properties": {
+        "value": 0,
+        "max": 1,
+        "min": -1,
+        "step": 0.05,
+        "kind": "slider"
+      }
+    },
+    {
+      "type": "text",
+      "description": "Title",
+      "key": "title",
+      "default": ["WIR STREIKEN", "BIS IHR", "HANDELT!"],
+      "properties": {
+
+      }
+    },
+    {
+      "type": "text",
+      "description": "Subtitle",
+      "key": "subtitle",
+      "default": ["“Warum für eine Zukunft", "lernen die es nicht", "mehr geben wird?”"]
+    },
+    {
+      "type": "selection",
+      "description": "Logo",
+      "key": "logo",
+      "properties": {
+        "items": [
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-2.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-3.svg"
+          },
+          {
+            "type": "file"
+          }
+        ]
+      }
+    }
+  ]
+}

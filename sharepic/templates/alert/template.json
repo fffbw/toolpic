@@ -1,0 +1,114 @@
+{
+  "name": "Alert",
+  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/alert/template.json",
+  "preview": "sharepic/templates/alert/preview.jpg",
+  "documents": [
+    {
+      "width": 1200,
+      "height": 1200,
+      "src": "sharepic/templates/alert/1200x1200.svg",
+      "alias": "Facebook, Instagram"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Jost",
+      "src": "fonts/Jost/Jost-600-Semi.ttf",
+      "mime": "font/truetype"
+    }
+  ],
+  "fields": [
+    {
+      "type": "selection",
+      "description": "Background",
+      "key": "backgroundImage",
+      "default": {
+        "value": "sharepic/templates/alert/default.jpg"
+      },
+      "properties": {
+        "items": [
+          {
+            "type": "file"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number",
+      "description": "Position",
+      "key": "pos",
+      "default": 0,
+      "properties": {
+        "value": 0,
+        "max": 1,
+        "min": -1,
+        "step": 0.05,
+        "kind": "slider"
+      }
+    },
+    {
+      "type": "number",
+      "description": "Opacity",
+      "key": "opacity",
+      "default": 0.4,
+      "properties": {
+        "value": 0.4,
+        "max": 1,
+        "min": 0,
+        "kind": "slider",
+        "step": 0.01
+      }
+    },
+    {
+      "type": "text",
+      "description": "Title",
+      "key": "title",
+      "default": ["ACT", "NOW!"],
+      "properties": {
+
+      }
+    },
+    {
+      "type": "line",
+      "description": "Date",
+      "key": "date",
+      "default": "15. März",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "line",
+      "description": "Location & Time",
+      "key": "location",
+      "default": "10 Uhr | Mainz Hbf",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "selection",
+      "description": "Logo",
+      "key": "logo",
+      "properties": {
+        "items": [
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-2.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-3.svg"
+          },
+          {
+            "type": "file"
+          }
+        ]
+      }
+    }
+  ]
+}

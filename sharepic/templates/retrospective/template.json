@@ -1,0 +1,163 @@
+{
+  "name": "Rückblick",
+  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/retrospective/template.json",
+  "preview": "sharepic/templates/retrospective/preview.jpg",
+  "documents": [
+    {
+      "width": 1200,
+      "height": 1200,
+      "src": "sharepic/templates/retrospective/1200x1200.svg",
+      "alias": "Facebook, Instagram"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Jost",
+      "src": "fonts/Jost/Jost-600-Semi.ttf",
+      "mime": "font/truetype"
+    },
+    {
+      "name": "Jost-400",
+      "src": "fonts/Jost/Jost-400-Book.ttf",
+      "mime": "font/truetype"
+    },
+    {
+      "name": "Jost-300",
+      "src": "fonts/Jost/Jost-300-Light.ttf",
+      "mime": "font/truetype"
+    },
+    {
+      "name": "Jost-700",
+      "src": "fonts/Jost/Jost-700-Bold.ttf",
+      "mime": "font/truetype"
+    },
+    {
+      "name": "Jost-500",
+      "src": "fonts/Jost/Jost-500-Medium.ttf",
+      "mime": "font/truetype"
+    }
+  ],
+  "fields": [
+    {
+      "type": "selection",
+      "description": "Background",
+      "key": "backgroundImage",
+      "default": {
+        "value": "sharepic/templates/retrospective/bg2.jpg"
+      },
+      "properties": {
+        "items": [
+          {
+            "type": "file"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number",
+      "description": "Position",
+      "key": "pos",
+      "default": 0,
+      "properties": {
+        "value": 0,
+        "max": 1,
+        "min": -1,
+        "step": 0.05,
+        "kind": "slider"
+      }
+    },
+    {
+      "type": "checklist",
+      "description": "Optionen",
+      "key": "options",
+      "default": [true],
+      "properties": {
+        "fields": [
+          "Zeit & Datum"
+        ]
+      }
+    },
+    {
+      "type": "line",
+      "description": "Date",
+      "key": "date",
+      "default": "29.11.",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "line",
+      "description": "Time",
+      "key": "time",
+      "default": "15 Uhr",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "number",
+      "description": "Position Uhrzeit X",
+      "key": "pos_time_x",
+      "default": 0,
+      "properties": {
+        "value": 0,
+        "max": 60,
+        "min": 0,
+        "step": 1,
+        "kind": "slider"
+      }
+    },
+    {
+      "type": "number",
+      "description": "Position Uhrzeit Y",
+      "key": "pos_time_y",
+      "default": 3,
+      "properties": {
+        "value": 3,
+        "max": 60,
+        "min": 0,
+        "step": 1,
+        "kind": "slider"
+      }
+    },
+    {
+      "type": "line",
+      "description": "Location",
+      "key": "location",
+      "default": "Marktplatz Ulm",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "line",
+      "description": "Hashtag",
+      "key": "hashtag",
+      "default": "#NeustartKlima",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "selection",
+      "description": "Logo",
+      "key": "logo",
+      "properties": {
+        "items": [
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-2.svg"
+          },
+          {
+            "type": "file"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+
+     viewBox="0 0 1200 1200"
+     version="1.1">
+
+
+
+  <g class="main">
+
+
+
+    <image v-if="typeof backgroundImage == 'object'" v-bind:xlink:href="backgroundImage.value" v-fitimage v-bind:data-image-pos="pos" style="transform-origin: 50% 50%;" />
+
+    <!-- Datum und Ort -->
+    <g v-if="options[0]" v-bind:style="'transform-origin:' + (180+pos_time_x*10) + 'px ' + (180+pos_time_y*10) + 'px; transform: scale(1.4,1.4) rotate(-6deg);'">
+      <g>
+        <rect v-bind:x="70+pos_time_x*10" v-bind:y="80+pos_time_y*10" height="75" v-bind:width="textInfo(date, { fontFamily: 'Jost', fontSize: '70px'}).width + 50" style="fill: #1B7340;" />
+        <text v-bind:x="95+pos_time_x*10" v-bind:y="140+pos_time_y*10" style="font-size: 70px; font-family: 'Jost'; fill: #fff;">
+          {{ date }}
+        </text>
+      </g>
+      <g>
+        <rect v-bind:x="70+pos_time_x*10 + textInfo(date, { fontFamily: 'Jost', fontSize: '70px'}).width + 50 - ((textInfo(time, { fontFamily: 'Jost', fontSize: '70px'}).width + 50) / 3)" v-bind:y="155+pos_time_y*10" height="75" v-bind:width="textInfo(time, { fontFamily: 'Jost', fontSize: '70px'}).width + 50" style="fill: #fff;" />
+        <text v-bind:x="95+pos_time_x*10 + textInfo(date, { fontFamily: 'Jost', fontSize: '70px'}).width + 50 - ((textInfo(time, { fontFamily: 'Jost', fontSize: '70px'}).width + 50) / 3)" v-bind:y="215+pos_time_y*10" style="font-size: 70px; font-family: 'Jost'; fill: #000;">
+          {{ time }}
+        </text>
+      </g>
+    </g>
+
+
+
+      <text x="-50" y="930" style="font-family: 'Jost'; font-size: 75px; fill: #fff; transform: rotate(-6deg); text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);">
+        {{ hashtag }}
+      </text>
+
+      <path style="fill: #1B7340;" d="M 0,950 l 1200,-125.43 0,30 -1200,125.43" />
+      <path style="fill: #1DA64A;" d="M 0,980 l 1200,-125.43 0,30 -1200,125.43" />
+      <path style="fill: #ffffff;" d="M 0,1010 l 1200,-125.43 L 1200,1200 0,1200"/>
+      <path style="fill: #1B7340;" d="M 100,1180 l -55.51,-86.3a66,66,1,1,1,111.02,0 l -55.51,86.3z M 100,1088 a 26,26,1,1,1,0.001,0z" fill-rule="evenodd"/>
+
+    <g v-dynamic data-dynamic-origin="none" data-dynamic-width="700" data-dynamic-height="110" style="transform-origin: 180px 1080px;">
+        <text x="180" y="1110" style="font-family: 'Jost-700'; font-size: 75px; fill: #1B7340;">
+            {{ location }}
+        </text>
+    </g>
+
+
+      <filter id="dropshadow" height="130%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="7"/> <!-- stdDeviation is how much to blur -->
+        <feOffset dx="7" dy="7" result="offsetblur"/> <!-- how much to offset -->
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.6"/> <!-- slope is the opacity of the shadow -->
+        </feComponentTransfer>
+        <feMerge>
+          <feMergeNode/> <!-- this contains the offset blurred image -->
+          <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+        </feMerge>
+      </filter>
+
+    <image v-bind:xlink:href="typeof logo == 'object' ? logo.value : logo" x="925" y="925" height="250" width="250" filter="url(#dropshadow)" />
+
+
+  </g>
+
+
+</svg>

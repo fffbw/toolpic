@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1200 1200"
+     version="1.1">
+
+  <g class="main">
+    <image v-if="typeof backgroundImage == 'object'" v-bind:xlink:href="backgroundImage.value" v-fitimage v-bind:data-image-pos="pos" style="transform-origin: 50% 50%;" />
+	<g>
+	    <image xlink:href="sharepic/resources/logobw.png" x="80" y="250" height="260" width="260" />
+    </g>
+	<g>
+	 <text x="45" y="160" style="fill: #1DA64A; font-family: 'Jost'; font-size: 130px;" >Demos am</text>
+	 </g><g>
+	 <text x="700" y="160" style="fill: #1DA64A; font-family: 'Jost'; font-size: 130px;" >{{ date }}</text>
+	</g>
+	
+	
+	
+	<g v-if="aalen[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="938" y="620" height="50" width="32" />
+    </g>
+	<g v-if="albstadt[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="598" y="814" height="50" width="32" />
+    </g>
+	<g v-if="badenbaden[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="355" y="620" height="50" width="32" />
+    </g>
+	<g v-if="freiburg[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="267" y="928" height="50" width="32" />
+    </g>
+	<g v-if="filderstadt[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="643" y="672" height="50" width="32" />
+    </g>
+	<g v-if="freudenstadt[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="400" y="723" height="50" width="32" />
+    </g>
+	<g v-if="giengen[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="938" y="673" height="50" width="32" />
+    </g>
+	<g v-if="geislingen[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="782" y="673" height="50" width="32" />
+    </g>
+	<g v-if="heidelberg[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="503" y="376" height="50" width="32" />
+    </g>
+	<g v-if="heilbronn[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="626" y="448" height="50" width="32" />
+    </g>
+	<g v-if="karlsruhe[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="416" y="519" height="50" width="32" />
+    </g>
+    <g v-if="konstanz[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="630" y="1080" height="50" width="32" />
+    </g>
+	<g v-if="lörrach[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="205" y="1094" height="50" width="32" />
+    </g>
+	<g v-if="ludwigsburg[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="626" y="549" height="50" width="32" />
+    </g>
+	<g v-if="mannheim[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="455" y="328" height="50" width="32" />
+    </g>
+	<g v-if="offenburg[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="284" y="723" height="50" width="32" />
+    </g>
+	<g v-if="pforzheim[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="491" y="578" height="50" width="32" />
+    </g>
+	<g v-if="rastatt[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="357" y="578" height="50" width="32" />
+    </g>
+	<g v-if="ravensburg[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="674" y="1007" height="50" width="32" />
+    </g>
+	<g v-if="reutlingen[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="661" y="724" height="50" width="32" />
+    </g>
+	<g v-if="schorndorf[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="756" y="597" height="50" width="32" />
+    </g>
+	<g v-if="singen[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="546" y="1061" height="50" width="32" />
+    </g>
+	<g v-if="stuttgart[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="626" y="620" height="50" width="32" />
+    </g>
+	<g v-if="titisee[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="385" y="994" height="50" width="32" />
+    </g>
+	<g v-if="tuebingen[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="598" y="710" height="50" width="32" />
+    </g>
+	<g v-if="tuttlingen[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="546" y="928" height="50" width="32" />
+    </g>
+	<g v-if="überlingen[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="674" y="1082" height="50" width="32" />
+    </g>
+	<g v-if="ulm[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="864" y="777" height="50" width="32" />
+    </g>
+	<g v-if="vs[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="503" y="928" height="50" width="32" />
+    </g>
+	<g v-if="wangen[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="825" y="1085" height="50" width="32" />
+    </g>
+	<g v-if="wertheim[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="710" y="207" height="50" width="32" />
+    </g>
+	<g v-if="weil[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="555" y="620" height="50" width="32" />
+    </g>
+	<g v-if="weinheim[0]">
+	    <image xlink:href="sharepic/resources/marker50.png" x="503" y="294" height="50" width="32" />
+    </g>
+  </g>
+</svg>

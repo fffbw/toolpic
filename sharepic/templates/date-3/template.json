@@ -1,0 +1,96 @@
+{
+  "name": "Datum",
+  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/date-3/template.json",
+  "preview": "sharepic/templates/date-3/preview.jpg",
+  "documents": [
+    {
+      "width": 1200,
+      "height": 1200,
+      "src": "sharepic/templates/date-3/1200x1200.svg",
+      "alias": "Facebook, Instagram"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Jost",
+      "src": "fonts/Jost/Jost-600-Semi.ttf",
+      "mime": "font/truetype"
+    },
+    {
+      "name": "Jost-500",
+      "src": "fonts/Jost/Jost-500-Medium.ttf",
+      "mime": "font/truetype"
+    },
+    {
+      "name": "Jost-300",
+      "src": "fonts/Jost/Jost-300-Light.ttf",
+      "mime": "font/truetype"
+    }
+  ],
+  "fields": [
+    {
+      "type": "number",
+      "description": "Position",
+      "key": "pos",
+      "default": -200,
+      "properties": {
+        "value": -200,
+        "max": 0,
+        "min": -800,
+        "step": 1,
+        "kind": "slider"
+      }
+    },
+    {
+      "type": "line",
+      "description": "Title",
+      "key": "title",
+      "default": "Globaler Klimastreik",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "line",
+      "description": "Subtitle",
+      "key": "subtitle",
+      "default": "#NeustartKlima",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "line",
+      "description": "Background Text",
+      "key": "background",
+      "default": "29.11. 29.11. 29.11. 29.11.",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "selection",
+      "description": "Logo",
+      "key": "logo",
+      "properties": {
+        "items": [
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-2.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-3.svg"
+          },
+          {
+            "type": "file"
+          }
+        ]
+      }
+    }
+  ]
+}

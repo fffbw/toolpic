@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+
+     viewBox="0 0 1200 1200"
+     version="1.1">
+
+
+
+  <g class="main">
+
+
+    <rect x="0" y="0" width="100%" height="100%" fill="#ee434d"/>
+    <g v-for="index in 10" style="transform: rotate(-10deg);">
+      <text v-bind:x="pos" v-bind:y="(index-1)*200" alignment-baseline="hanging" style="fill: #fff; font-family: 'Jost'; font-size: 200px;">
+        {{ background }}
+      </text>
+    </g>
+
+    <rect x="0" y="450" width="100%" height="300" fill="#fff"/>
+    <text x="600" y="590" text-anchor="middle" alignment-baseline="bottom" v-bind:style="'fill: #000; font-family: \'Jost\'; font-size: ' + Math.min(1100*150/textInfo(title, { fontFamily: 'Jost', fontSize: '150px'}).width, 180) + 'px;'">
+      {{title}}
+    </text>
+    <text x="600" y="610" text-anchor="middle" alignment-baseline="hanging" v-bind:style="'fill: #000; font-family: \'Jost-300\'; font-size: ' + Math.min(1100*150/textInfo(title, { fontFamily: 'Jost', fontSize: '150px'}).width, 180) + 'px;'">
+      {{ subtitle }}
+    </text>
+
+
+    <defs>
+      <filter id="dropshadow" height="130%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="7"/> <!-- stdDeviation is how much to blur -->
+        <feOffset dx="0" dy="10" result="offsetblur"/> <!-- how much to offset -->
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.6"/> <!-- slope is the opacity of the shadow -->
+        </feComponentTransfer>
+        <feMerge>
+          <feMergeNode/> <!-- this contains the offset blurred image -->
+          <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+        </feMerge>
+      </filter>
+    </defs>
+
+    <image v-bind:xlink:href="typeof logo == 'object' ? logo.value : logo" x="925" y="925" height="250" width="250" />
+
+
+  </g>
+
+
+</svg>
