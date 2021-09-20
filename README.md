@@ -212,7 +212,7 @@ y=RUNDEN(B2*(-408,994)+20558,115)
 OG LISTE UMARBEITEN:
 ^(.*)
 replace
-"$0";
+"$0",
 
 Koordinaten Umarbeiten
 ^(\d*)\s(\d*)\s(\d*)
