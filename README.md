@@ -217,4 +217,6 @@ replace
 Koordinaten Umarbeiten
 ^(\d*)\s(\d*)\s(\d*)
 replace
+```html
 <g v-if="locations[$1]"><image xlink:href="sharepic/resources/marker50.png" x="$2" y="$3" height="50" width="32" /></g>
+```
