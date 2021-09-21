@@ -75,370 +75,231 @@
 
       }
     },
-	
-	
 	{
       "type": "checklist",
-      "description": "Optionen",
-      "key": "aalen",
-      "default": [true],
+      "description": "Orte:",
+      "key": "locations",
+      "default": [
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true,
+true],
       "properties": {
         "fields": [
-          "Aalen"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "albstadt",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Albstadt"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "badenbaden",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Baden-Baden"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "freiburg",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Freiburg"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "filderstadt",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Filderstadt"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "freudenstadt",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Freudenstadt"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "geislingen",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Geislingen an der Steige"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "giengen",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Giengen an der Brenz"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "heidelberg",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Heidelberg"
-        ]
-      }
-    },
-	
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "heilbronn",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Heilbronn"
-        ]
-      }
-    },
-	
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "karlsruhe",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Karlsruhe"
-        ]
-      }
-    },
-    {
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "konstanz",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Konstanz"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "lörrach",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Lörrach"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "ludwigsburg",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Ludwigsburg"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "mannheim",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Mannheim"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "offenburg",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Offenburg"
-        ]
-      }
-    },
-		{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "pforzheim",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Pforzheim"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "rastatt",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Rastatt"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "ravensburg",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Ravensburg"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "reutlingen",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Reutlingen"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "schorndorf",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Schorndorf"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "singen",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Singen"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "stuttgart",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Stuttgart"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "titisee",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Titisee-Neustadt"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "tuebingen",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Tübingen"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "tuttlingen",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Tuttlingen"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "überlingen",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Überlingen und Friedrichshafen"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "ulm",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Ulm"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "vs",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Villingen-Schwenningen"
-        ]
-      }
-    },
-    {
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "wangen",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Wangen"
-        ]
-      }
-    },
-    {
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "weil",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Weil der Stadt"
-        ]
-      }
-    },
-	{
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "wertheim",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Wertheim"
-        ]
-      }
-    },
-    {
-      "type": "checklist",
-      "description": "Optionen",
-      "key": "weinheim",
-      "default": [true],
-      "properties": {
-        "fields": [
-          "Weinheim"
+"Aalen",
+"Achern",
+"Albstadt",
+"Alpirsbach",
+"Aulendorf",
+"Backnang",
+"Bad Mergentheim",
+"Bad Säckingen",
+"Bad Waldsee",
+"Baden-Baden",
+"Balingen",
+"Besigheim",
+"Biberach",
+"Bietigheim-Bissingen",
+"Blaubeuren",
+"Bodensee",
+"Breisach am Rhein",
+"Bruchsal",
+"Bühl",
+"Böblingen",
+"Calw",
+"Calw-Nagold",
+"Crailsheim",
+"Eberbach",
+"Eppingen",
+"Esslingen",
+"Filderstadt",
+"Freiburg",
+"Freudenstadt",
+"Friedrichshafen",
+"Friesenheim",
+"Geislingen",
+"Grenzach-Wyhlen",
+"Grunbach",
+"Gundelfingen",
+"Göppingen",
+"Heidelberg",
+"Heidenheim",
+"Heilbronn",
+"Herrenberg",
+"Hochdorf",
+"Horb am Neckar",
+"Isny",
+"Karlsruhe",
+"Kirchheim unter Teck",
+"Konstanz",
+"Konstanz am Bodensee",
+"Künzelsau",
+"Lahr",
+"Laupheim",
+"Leutkirch im Allgäu",
+"Loßburg",
+"Ludwigsburg",
+"Lörrach",
+"Mannheim",
+"Mosbach",
+"Münsingen",
+"Möckmühl",
+"Neuenburg am Rhein",
+"Nussloch",
+"Nürtingen",
+"Oberhausen-Rheinhausen",
+"Oberndorf am Neckar",
+"Offenburg",
+"Ostalb (Aalen, Ellwangen & Schwäbisch Gmünd)",
+"Ostalbkreis",
+"Pforzheim",
+"Pfullendorf",
+"Radolfzell",
+"Rastatt",
+"Ravensburg",
+"Reutlingen",
+"Rottenburg am Neckar",
+"Rottweil",
+"Schopfheim",
+"Schorndorf/Remstal",
+"Schramberg",
+"Schriesheim",
+"Schwetzingen",
+"Schwäbisch Hall",
+"Sigmaringen",
+"Sindelfingen",
+"Singen",
+"Sinsheim",
+"Spaichingen",
+"St. Georgen",
+"Stuttgart",
+"Stuttgart",
+"Tauberbischofsheim",
+"Titisee-Neustadt",
+"Trossingen",
+"Tuttlingen",
+"Tübingen",
+"Ulm",
+"Vaihingen",
+"Villingen-Schwenningen",
+"Waghäusel",
+"Waldkirch",
+"Waldshut-Tiengen",
+"Wangen",
+"Wangen im Allgäu",
+"Weil der Stadt",
+"Weingarten",
+"Weinheim",
+"Wertheim",
+"Wiesloch",
+"Winnenden",
+"Überlingen",
+"Öhringen" 
         ]
       }
     }

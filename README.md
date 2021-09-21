@@ -203,20 +203,12 @@ Für weitere Details lohnt sich ein Blick in die bestehenden Templates ;-)
 
 
 ## OGS UPDATEN
-aus api ziehen
+./sharepic/templates/bw/regio.sh
+47,6120896*x+y=1100
+49,7614982*x+y=213
 
-og name
-x=RUNDEN(lat*(297,253)-2072,17)
-y=RUNDEN(B2*(-408,994)+20558,115)
+geo*x*y= pixel
+lörrach und wertheim
 
-OG LISTE UMARBEITEN:
-^(.*)
-replace
-"$0",
-
-Koordinaten Umarbeiten
-^(\d*)\s(\d*)\s(\d*)
-replace
-```html
-<g v-if="locations[$1]"><image xlink:href="sharepic/resources/marker50.png" x="$2" y="$3" height="50" width="32" /></g>
-```
+7,6607218*x+y=220
+9,5155411*x+y=735

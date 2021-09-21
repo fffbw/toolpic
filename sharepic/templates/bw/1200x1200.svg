@@ -2,118 +2,124 @@
      xmlns:xlink="http://www.w3.org/1999/xlink"
      viewBox="0 0 1200 1200"
      version="1.1">
-
-  <g class="main">
+ <g class="main">
     <image v-if="typeof backgroundImage == 'object'" v-bind:xlink:href="backgroundImage.value" v-fitimage v-bind:data-image-pos="pos" style="transform-origin: 50% 50%;" />
 	<g>
 	    <image xlink:href="sharepic/resources/logobw.png" x="80" y="250" height="260" width="260" />
-    </g>
+        </g>
 	<g>
 	 <text x="45" y="160" style="fill: #1DA64A; font-family: 'Jost'; font-size: 130px;" >Demos am</text>
 	 </g><g>
 	 <text x="700" y="160" style="fill: #1DA64A; font-family: 'Jost'; font-size: 130px;" >{{ date }}</text>
 	</g>
-	
-	
-	
-	<g v-if="aalen[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="938" y="620" height="50" width="32" />
-    </g>
-	<g v-if="albstadt[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="598" y="814" height="50" width="32" />
-    </g>
-	<g v-if="badenbaden[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="355" y="620" height="50" width="32" />
-    </g>
-	<g v-if="freiburg[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="267" y="928" height="50" width="32" />
-    </g>
-	<g v-if="filderstadt[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="643" y="672" height="50" width="32" />
-    </g>
-	<g v-if="freudenstadt[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="400" y="723" height="50" width="32" />
-    </g>
-	<g v-if="giengen[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="938" y="673" height="50" width="32" />
-    </g>
-	<g v-if="geislingen[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="782" y="673" height="50" width="32" />
-    </g>
-	<g v-if="heidelberg[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="503" y="376" height="50" width="32" />
-    </g>
-	<g v-if="heilbronn[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="626" y="448" height="50" width="32" />
-    </g>
-	<g v-if="karlsruhe[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="416" y="519" height="50" width="32" />
-    </g>
-    <g v-if="konstanz[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="630" y="1080" height="50" width="32" />
-    </g>
-	<g v-if="lörrach[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="205" y="1094" height="50" width="32" />
-    </g>
-	<g v-if="ludwigsburg[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="626" y="549" height="50" width="32" />
-    </g>
-	<g v-if="mannheim[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="455" y="328" height="50" width="32" />
-    </g>
-	<g v-if="offenburg[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="284" y="723" height="50" width="32" />
-    </g>
-	<g v-if="pforzheim[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="491" y="578" height="50" width="32" />
-    </g>
-	<g v-if="rastatt[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="357" y="578" height="50" width="32" />
-    </g>
-	<g v-if="ravensburg[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="674" y="1007" height="50" width="32" />
-    </g>
-	<g v-if="reutlingen[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="661" y="724" height="50" width="32" />
-    </g>
-	<g v-if="schorndorf[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="756" y="597" height="50" width="32" />
-    </g>
-	<g v-if="singen[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="546" y="1061" height="50" width="32" />
-    </g>
-	<g v-if="stuttgart[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="626" y="620" height="50" width="32" />
-    </g>
-	<g v-if="titisee[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="385" y="994" height="50" width="32" />
-    </g>
-	<g v-if="tuebingen[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="598" y="710" height="50" width="32" />
-    </g>
-	<g v-if="tuttlingen[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="546" y="928" height="50" width="32" />
-    </g>
-	<g v-if="überlingen[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="674" y="1082" height="50" width="32" />
-    </g>
-	<g v-if="ulm[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="864" y="777" height="50" width="32" />
-    </g>
-	<g v-if="vs[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="503" y="928" height="50" width="32" />
-    </g>
-	<g v-if="wangen[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="825" y="1085" height="50" width="32" />
-    </g>
-	<g v-if="wertheim[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="710" y="207" height="50" width="32" />
-    </g>
-	<g v-if="weil[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="555" y="620" height="50" width="32" />
-    </g>
-	<g v-if="weinheim[0]">
-	    <image xlink:href="sharepic/resources/marker50.png" x="503" y="294" height="50" width="32" />
-    </g>
+<g v-if="locations[104]"><image xlink:href="sharepic/resources/marker50.png" x="734.9995641" y="212.9830149" height="50" width="32" /></g>
+<g v-if="locations[88]"><image xlink:href="sharepic/resources/marker50.png" x="775.8628001" y="270.1504670" height="50" width="32" /></g>
+<g v-if="locations[33]"><image xlink:href="sharepic/resources/marker50.png" x="797.6519983" y="277.8742012" height="50" width="32" /></g>
+<g v-if="locations[103]"><image xlink:href="sharepic/resources/marker50.png" x="500.7155800" y="301.8161514" height="50" width="32" /></g>
+<g v-if="locations[6]"><image xlink:href="sharepic/resources/marker50.png" x="806.5035287" y="324.803179" height="50" width="32" /></g>
+<g v-if="locations[54]"><image xlink:href="sharepic/resources/marker50.png" x="443.9529025" y="325.3151807" height="50" width="32" /></g>
+<g v-if="locations[77]"><image xlink:href="sharepic/resources/marker50.png" x="497.7638575" y="331.1424395" height="50" width="32" /></g>
+<g v-if="locations[23]"><image xlink:href="sharepic/resources/marker50.png" x="587.8366388" y="335.9460241" height="50" width="32" /></g>
+<g v-if="locations[36]"><image xlink:href="sharepic/resources/marker50.png" x="507.095592" y="358.3013329" height="50" width="32" /></g>
+<g v-if="locations[78]"><image xlink:href="sharepic/resources/marker50.png" x="473.4408908" y="369.0581651" height="50" width="32" /></g>
+<g v-if="locations[55]"><image xlink:href="sharepic/resources/marker50.png" x="632.4003219" y="381.9266811" height="50" width="32" /></g>
+<g v-if="locations[57]"><image xlink:href="sharepic/resources/marker50.png" x="692.1296321" y="393.8146060" height="50" width="32" /></g>
+<g v-if="locations[59]"><image xlink:href="sharepic/resources/marker50.png" x="507.4328042" y="393.9945310" height="50" width="32" /></g>
+<g v-if="locations[105]"><image xlink:href="sharepic/resources/marker50.png" x="508.201492" y="405.7991786" height="50" width="32" /></g>
+<g v-if="locations[47]"><image xlink:href="sharepic/resources/marker50.png" x="783.4809314" y="411.5284690" height="50" width="32" /></g>
+<g v-if="locations[61]"><image xlink:href="sharepic/resources/marker50.png" x="446.2129864" y="417.544608" height="50" width="32" /></g>
+<g v-if="locations[83]"><image xlink:href="sharepic/resources/marker50.png" x="557.76651" y="421.8769" height="50" width="32" /></g>
+<g v-if="locations[96]"><image xlink:href="sharepic/resources/marker50.png" x="462.3949142" y="431.9748810" height="50" width="32" /></g>
+<g v-if="locations[108]"><image xlink:href="sharepic/resources/marker50.png" x="731.3618949" y="444.4898610" height="50" width="32" /></g>
+<g v-if="locations[38]"><image xlink:href="sharepic/resources/marker50.png" x="652.567654" y="468.512489" height="50" width="32" /></g>
+<g v-if="locations[24]"><image xlink:href="sharepic/resources/marker50.png" x="566.4341862" y="470.5607034" height="50" width="32" /></g>
+<g v-if="locations[22]"><image xlink:href="sharepic/resources/marker50.png" x="889.5085742" y="470.8764388" height="50" width="32" /></g>
+<g v-if="locations[17]"><image xlink:href="sharepic/resources/marker50.png" x="480.2464647" y="476.011977" height="50" width="32" /></g>
+<g v-if="locations[79]"><image xlink:href="sharepic/resources/marker50.png" x="796.4622744" y="480.8491941" height="50" width="32" /></g>
+<g v-if="locations[43]"><image xlink:href="sharepic/resources/marker50.png" x="426.2134412" y="524.3967371" height="50" width="32" /></g>
+<g v-if="locations[11]"><image xlink:href="sharepic/resources/marker50.png" x="631.2152348" y="527.3820476" height="50" width="32" /></g>
+<g v-if="locations[13]"><image xlink:href="sharepic/resources/marker50.png" x="630.2654048" y="547.7570260" height="50" width="32" /></g>
+<g v-if="locations[5]"><image xlink:href="sharepic/resources/marker50.png" x="711.5603177" y="549.2357124" height="50" width="32" /></g>
+<g v-if="locations[52]"><image xlink:href="sharepic/resources/marker50.png" x="644.4767040" y="570.4000911" height="50" width="32" /></g>
+<g v-if="locations[66]"><image xlink:href="sharepic/resources/marker50.png" x="509.3804707" y="572.2608704" height="50" width="32" /></g>
+<g v-if="locations[65]"><image xlink:href="sharepic/resources/marker50.png" x="897.097722907908318" y="573.55630966" height="50" width="32" /></g>
+<g v-if="locations[106]"><image xlink:href="sharepic/resources/marker50.png" x="702.3214309" y="578.6273677" height="50" width="32" /></g>
+<g v-if="locations[69]"><image xlink:href="sharepic/resources/marker50.png" x="372.1788073" y="586.0704024" height="50" width="32" /></g>
+<g v-if="locations[0]"><image xlink:href="sharepic/resources/marker50.png" x="895.3326655" y="594.2583926" height="50" width="32" /></g>
+<g v-if="locations[64]"><image xlink:href="sharepic/resources/marker50.png" x="895.3829211" y="594.7985803" height="50" width="32" /></g>
+<g v-if="locations[75]"><image xlink:href="sharepic/resources/marker50.png" x="738.2551800" y="607.4897299" height="50" width="32" /></g>
+<g v-if="locations[87]"><image xlink:href="sharepic/resources/marker50.png" x="650.4236854" y="611.488481" height="50" width="32" /></g>
+<g v-if="locations[86]"><image xlink:href="sharepic/resources/marker50.png" x="641.8385650" y="618.6601007" height="50" width="32" /></g>
+<g v-if="locations[9]"><image xlink:href="sharepic/resources/marker50.png" x="381.2623184" y="627.0665594" height="50" width="32" /></g>
+<g v-if="locations[101]"><image xlink:href="sharepic/resources/marker50.png" x="555.9602900" y="630.3570409" height="50" width="32" /></g>
+<g v-if="locations[25]"><image xlink:href="sharepic/resources/marker50.png" x="677.1438698" y="633.3884056" height="50" width="32" /></g>
+<g v-if="locations[94]"><image xlink:href="sharepic/resources/marker50.png" x="616.470608305210332" y="636.8256745" height="50" width="32" /></g>
+<g v-if="locations[21]"><image xlink:href="sharepic/resources/marker50.png" x="518.10350" y="640.108522" height="50" width="32" /></g>
+<g v-if="locations[20]"><image xlink:href="sharepic/resources/marker50.png" x="519.1612568" y="644.7055225" height="50" width="32" /></g>
+<g v-if="locations[81]"><image xlink:href="sharepic/resources/marker50.png" x="592.8414258" y="647.5604700" height="50" width="32" /></g>
+<g v-if="locations[35]"><image xlink:href="sharepic/resources/marker50.png" x="773.4743562" y="649.7387591" height="50" width="32" /></g>
+<g v-if="locations[18]"><image xlink:href="sharepic/resources/marker50.png" x="351.525218" y="653.3005724" height="50" width="32" /></g>
+<g v-if="locations[40]"><image xlink:href="sharepic/resources/marker50.png" x="721.497568982658906" y="653.6295958" height="50" width="32" /></g>
+<g v-if="locations[19]"><image xlink:href="sharepic/resources/marker50.png" x="595.0068293" y="657.236473" height="50" width="32" /></g>
+<g v-if="locations[37]"><image xlink:href="sharepic/resources/marker50.png" x="911.971835" y="660.6225704" height="50" width="32" /></g>
+<g v-if="locations[26]"><image xlink:href="sharepic/resources/marker50.png" x="653.9630092" y="666.8673708" height="50" width="32" /></g>
+<g v-if="locations[44]"><image xlink:href="sharepic/resources/marker50.png" x="717.0857077" y="672.4700534" height="50" width="32" /></g>
+<g v-if="locations[1]"><image xlink:href="sharepic/resources/marker50.png" x="334.6257742" y="679.9139960" height="50" width="32" /></g>
+<g v-if="locations[60]"><image xlink:href="sharepic/resources/marker50.png" x="685.3007629" y="681.3297499" height="50" width="32" /></g>
+<g v-if="locations[39]"><image xlink:href="sharepic/resources/marker50.png" x="554.9704221" y="694.1064877" height="50" width="32" /></g>
+<g v-if="locations[92]"><image xlink:href="sharepic/resources/marker50.png" x="606.7262859" y="723.8221730" height="50" width="32" /></g>
+<g v-if="locations[71]"><image xlink:href="sharepic/resources/marker50.png" x="650.5572652" y="736.8896795" height="50" width="32" /></g>
+<g v-if="locations[72]"><image xlink:href="sharepic/resources/marker50.png" x="573.4425872" y="743.07597" height="50" width="32" /></g>
+<g v-if="locations[63]"><image xlink:href="sharepic/resources/marker50.png" x="298.758273" y="745.2649403" height="50" width="32" /></g>
+<g v-if="locations[28]"><image xlink:href="sharepic/resources/marker50.png" x="428.3661560" y="748.5179924" height="50" width="32" /></g>
+<g v-if="locations[41]"><image xlink:href="sharepic/resources/marker50.png" x="506.1947128" y="756.3498467" height="50" width="32" /></g>
+<g v-if="locations[56]"><image xlink:href="sharepic/resources/marker50.png" x="729.2377508" y="769.5285683" height="50" width="32" /></g>
+<g v-if="locations[51]"><image xlink:href="sharepic/resources/marker50.png" x="438.5091152" y="769.810919" height="50" width="32" /></g>
+<g v-if="locations[14]"><image xlink:href="sharepic/resources/marker50.png" x="809.7354051" y="769.8322536" height="50" width="32" /></g>
+<g v-if="locations[93]"><image xlink:href="sharepic/resources/marker50.png" x="867.6888062" y="775.9080234" height="50" width="32" /></g>
+<g v-if="locations[30]"><image xlink:href="sharepic/resources/marker50.png" x="281.530058" y="785.7765379" height="50" width="32" /></g>
+<g v-if="locations[3]"><image xlink:href="sharepic/resources/marker50.png" x="426.1824549" y="797.2836902" height="50" width="32" /></g>
+<g v-if="locations[48]"><image xlink:href="sharepic/resources/marker50.png" x="278.4074115" y="800.051110" height="50" width="32" /></g>
+<g v-if="locations[62]"><image xlink:href="sharepic/resources/marker50.png" x="472.7769344" y="819.8736857" height="50" width="32" /></g>
+<g v-if="locations[31]"><image xlink:href="sharepic/resources/marker50.png" x="540.0880864" y="820.7949346" height="50" width="32" /></g>
+<g v-if="locations[10]"><image xlink:href="sharepic/resources/marker50.png" x="551.8153173" y="826.9345448" height="50" width="32" /></g>
+<g v-if="locations[2]"><image xlink:href="sharepic/resources/marker50.png" x="591.6205212" y="843.731616" height="50" width="32" /></g>
+<g v-if="locations[49]"><image xlink:href="sharepic/resources/marker50.png" x="835.4044988" y="844.7689907" height="50" width="32" /></g>
+<g v-if="locations[76]"><image xlink:href="sharepic/resources/marker50.png" x="421.1593706" y="846.855543" height="50" width="32" /></g>
+<g v-if="locations[73]"><image xlink:href="sharepic/resources/marker50.png" x="487.7719981" y="871.593992" height="50" width="32" /></g>
+<g v-if="locations[85]"><image xlink:href="sharepic/resources/marker50.png" x="406.6679730" y="888.0046361" height="50" width="32" /></g>
+<g v-if="locations[12]"><image xlink:href="sharepic/resources/marker50.png" x="812.0691787" y="897.841582" height="50" width="32" /></g>
+<g v-if="locations[97]"><image xlink:href="sharepic/resources/marker50.png" x="303.3773977" y="901.1377574" height="50" width="32" /></g>
+<g v-if="locations[80]"><image xlink:href="sharepic/resources/marker50.png" x="652.3546648" y="904.5857145" height="50" width="32" /></g>
+<g v-if="locations[90]"><image xlink:href="sharepic/resources/marker50.png" x="490.8735155" y="908.92884" height="50" width="32" /></g>
+<g v-if="locations[84]"><image xlink:href="sharepic/resources/marker50.png" x="519.4429378" y="909.7495205" height="50" width="32" /></g>
+<g v-if="locations[95]"><image xlink:href="sharepic/resources/marker50.png" x="451.5030083" y="913.8083147" height="50" width="32" /></g>
+<g v-if="locations[34]"><image xlink:href="sharepic/resources/marker50.png" x="277.7191880" y="921.6979018" height="50" width="32" /></g>
+<g v-if="locations[16]"><image xlink:href="sharepic/resources/marker50.png" x="197.7569081" y="927.8781190" height="50" width="32" /></g>
+<g v-if="locations[27]"><image xlink:href="sharepic/resources/marker50.png" x="272.3872958" y="941.5175063" height="50" width="32" /></g>
+<g v-if="locations[91]"><image xlink:href="sharepic/resources/marker50.png" x="541.5072088" y="946.3286841" height="50" width="32" /></g>
+<g v-if="locations[4]"><image xlink:href="sharepic/resources/marker50.png" x="769.8152798" y="959.3754332" height="50" width="32" /></g>
+<g v-if="locations[67]"><image xlink:href="sharepic/resources/marker50.png" x="662.1878166" y="971.0200053" height="50" width="32" /></g>
+<g v-if="locations[8]"><image xlink:href="sharepic/resources/marker50.png" x="801.2858359" y="972.5234107" height="50" width="32" /></g>
+<g v-if="locations[89]"><image xlink:href="sharepic/resources/marker50.png" x="362.3796127" y="974.0146010" height="50" width="32" /></g>
+<g v-if="locations[50]"><image xlink:href="sharepic/resources/marker50.png" x="875.8432836" y="1011.4556712" height="50" width="32" /></g>
+<g v-if="locations[58]"><image xlink:href="sharepic/resources/marker50.png" x="192.8076522" y="1016.0041833" height="50" width="32" /></g>
+<g v-if="locations[102]"><image xlink:href="sharepic/resources/marker50.png" x="770.4209564" y="1019.3310212" height="50" width="32" /></g>
+<g v-if="locations[70]"><image xlink:href="sharepic/resources/marker50.png" x="761.911802" y="1030.2373231" height="50" width="32" /></g>
+<g v-if="locations[46]"><image xlink:href="sharepic/resources/marker50.png" x="591.387495280609461" y="1036.1024239" height="50" width="32" /></g>
+<g v-if="locations[107]"><image xlink:href="sharepic/resources/marker50.png" x="638.1278725" y="1036.1702259" height="50" width="32" /></g>
+<g v-if="locations[82]"><image xlink:href="sharepic/resources/marker50.png" x="546.0080797" y="1038.2224850" height="50" width="32" /></g>
+<g v-if="locations[68]"><image xlink:href="sharepic/resources/marker50.png" x="583.2236509" y="1048.7711242" height="50" width="32" /></g>
+<g v-if="locations[42]"><image xlink:href="sharepic/resources/marker50.png" x="878.860423773384655" y="1067.136988313601651" height="50" width="32" /></g>
+<g v-if="locations[100]"><image xlink:href="sharepic/resources/marker50.png" x="823.4889622" y="1069.3660155" height="50" width="32" /></g>
+<g v-if="locations[99]"><image xlink:href="sharepic/resources/marker50.png" x="823.4836590" y="1069.6252974" height="50" width="32" /></g>
+<g v-if="locations[45]"><image xlink:href="sharepic/resources/marker50.png" x="640.4665606" y="1080.536015" height="50" width="32" /></g>
+<g v-if="locations[74]"><image xlink:href="sharepic/resources/marker50.png" x="264.6960302" y="1084.3175348" height="50" width="32" /></g>
+<g v-if="locations[29]"><image xlink:href="sharepic/resources/marker50.png" x="725.1552227" y="1084.3276865" height="50" width="32" /></g>
+<g v-if="locations[15]"><image xlink:href="sharepic/resources/marker50.png" x="688.240315798120657" y="1085.24978141" height="50" width="32" /></g>
+<g v-if="locations[98]"><image xlink:href="sharepic/resources/marker50.png" x="381.0774002" y="1093.3456014" height="50" width="32" /></g>
+<g v-if="locations[53]"><image xlink:href="sharepic/resources/marker50.png" x="219.9997113" y="1099.9837606" height="50" width="32" /></g>
+<g v-if="locations[32]"><image xlink:href="sharepic/resources/marker50.png" x="223.6304114" y="1124.4283040" height="50" width="32" /></g>
+<g v-if="locations[7]"><image xlink:href="sharepic/resources/marker50.png" x="300.1911677" y="1124.5525183" height="50" width="32" /></g>
   </g>
 </svg>
