@@ -1,0 +1,51 @@
+{
+  "name": "THE LÄND",
+  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/theländ/template.json",
+  "preview": "sharepic/templates/theländ/preview.jpg",
+  "documents": [
+    {
+      "width": 1200,
+      "height": 1200,
+      "src": "sharepic/templates/theländ/1200x1200.svg",
+      "alias": "Facebook, Instagram"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "thelaend",
+      "src": "sharepic/templates/theländ/theländ.otf",
+      "mime": "font/otf"
+    }
+  ],
+  "fields": [
+    {
+      "type": "text",
+      "description": "Title",
+      "key": "title",
+      "default": ["THE","Ländle"],
+      "properties": {
+
+      }
+    },
+    {
+      "type": "selection",
+      "description": "Logo",
+      "key": "logo",
+      "properties": {
+        "items": [
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-2.svg"
+          },
+          {
+            "type": "file"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+
+     viewBox="0 0 1200 1200"
+     version="1.1">
+
+
+
+  <g class="main">
+
+
+
+    <rect x="0" y="0" width="100%" height="100%" style="fill: #ff0;"/>
+
+      <g style="transform-origin: 50% 50%;" v-bind:style="{ 'transform': 'scale(' + Math.min(700 / ((200 * title.length) + 125), (1200 - 200) / (Math.max(...title.map(line => textInfo(line.toUpperCase(), { fontFamily: 'thelaend', fontSize: '200px'}).width)) + 200)) + ')' }">
+      <g v-for="line in title">
+        <text text-anchor="middle" x="600" fill="#000" v-bind:y="((600 - (200 * title.length) / 2) + 25) + (title.indexOf(line) * 200) + 110" style="font-size: 200px; font-family: 'thelaend';">
+          {{ line }}
+        </text>
+      </g>
+    </g>
+
+
+    <defs>
+      <filter id="dropshadow" height="130%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="5"/> <!-- stdDeviation is how much to blur -->
+        <feOffset dx="0" dy="10" result="offsetblur"/> <!-- how much to offset -->
+        <feComponentTransfer>
+          <feFuncA type="linear" slope="0.6"/> <!-- slope is the opacity of the shadow -->
+        </feComponentTransfer>
+        <feMerge>
+          <feMergeNode/> <!-- this contains the offset blurred image -->
+          <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+        </feMerge>
+      </filter>
+    </defs>
+
+    <image v-bind:xlink:href="typeof logo == 'object' ? logo.value : logo" x="25" y="925" height="250" width="250" filter="url(#dropshadow)" />
+
+
+  </g>
+
+
+</svg>
