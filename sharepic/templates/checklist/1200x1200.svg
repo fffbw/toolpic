@@ -47,19 +47,19 @@
     </g>
 
     <g v-dynamic data-dynamic-origin="none" data-dynamic-width="1100" data-dynamic-height="100" style="transform-origin: 50px 1100px;">
-      <g>
+      <g v-if="platforms[0]">
         <image xlink:href="sharepic/resources/instagram.svg" x="50" y="1120" height="60" width="60" />
         <text x="120" y="1155" style="text-anchor: start; alignment-baseline: middle; fill: #fff; font-size: 40px; font-family: 'Jost-300';">
           {{ instagramacc }}
         </text>
       </g>
-      <g>
+      <g v-if="platforms[1]">
         <image xlink:href="sharepic/resources/facebook.svg" v-bind:x="130 + textInfo(instagramacc, { fontFamily: 'Jost-300', fontSize: '40px'}).width" y="1120" height="60" width="60" />
         <text v-bind:x="130 + textInfo(instagramacc, { fontFamily: 'Jost-300', fontSize: '40px'}).width + 70" y="1155" style="text-anchor: start; alignment-baseline: middle; fill: #fff; font-size: 40px; font-family: 'Jost-300';">
           {{ facebookacc }}
         </text>
       </g>
-      <g>
+      <g v-if="platforms[2]">
         <image xlink:href="sharepic/resources/twitter.svg" v-bind:x="130 + textInfo(instagramacc, { fontFamily: 'Jost-300', fontSize: '40px'}).width + 20 + textInfo(facebookacc, { fontFamily: 'Jost-300', fontSize: '40px'}).width + 70" y="1120" height="60" width="60" />
         <text v-bind:x="130 + textInfo(instagramacc, { fontFamily: 'Jost-300', fontSize: '40px'}).width + 30 + textInfo(facebookacc, { fontFamily: 'Jost-300', fontSize: '40px'}).width + 50 + 70" y="1155" style="text-anchor: start; alignment-baseline: middle; fill: #fff; font-size: 40px; font-family: 'Jost-300';">
           {{ twitteracc }}

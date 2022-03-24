@@ -71,6 +71,10 @@
             "value": "sharepic/resources/logo-2.svg"
           },
           {
+            "type": "value",
+            "value": "sharepic/resources/logo-3.svg"
+          },
+          {
             "type": "file"
           }
         ]

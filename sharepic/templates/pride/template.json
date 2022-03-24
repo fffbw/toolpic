@@ -34,7 +34,7 @@
       "description": "Background",
       "key": "backgroundImage",
       "default": {
-        "value": "sharepic/templates/pride/bg.jpg"
+        "value": "sharepic/templates/pride/default.jpg"
       },
       "properties": {
         "items": [

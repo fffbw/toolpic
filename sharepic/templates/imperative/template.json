@@ -34,7 +34,7 @@
       "description": "Background",
       "key": "backgroundImage",
       "default": {
-        "value": "sharepic/templates/imperative/bg.jpg"
+        "value": "sharepic/templates/imperative/default.jpg"
       },
       "properties": {
         "items": [
@@ -86,8 +86,7 @@
             "value": "sharepic/resources/logo-2.svg"
           },
           {
-            "type": "value",
-            "value": "sharepic/resources/logo.svg"
+            "type": "file"
           }
         ]
       }

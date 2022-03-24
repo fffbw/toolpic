@@ -23,7 +23,7 @@
       <multiline-text v-dynamic data-dynamic-origin="none" data-dynamic-width="750" data-dynamic-height="250" style="transform-origin: 30px 1170px;" x="30" y="-5" padding="0" v-bind:text="description" lineheight="1.1" background="none" css="font-size: 80px; font-family: 'Jost-300'; fill: #fff;"></multiline-text>
     </g>
 
-    <image xlink:href="sharepic/resources/logo-2.svg" x="866" y="866" height="500" width="500" />
+    <image v-bind:xlink:href="typeof logo == 'object' ? logo.value : logo" x="866" y="866" height="500" width="500" />
 
 
   </g>

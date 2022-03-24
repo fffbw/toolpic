@@ -41,7 +41,7 @@
       {{ info }}
     </text>
 
-    <image xlink:href="sharepic/resources/logo.svg" x="980" y="980" height="200" width="200" filter="url(#dropshadow)"/>
+    <image v-bind:xlink:href="typeof logo == 'object' ? logo.value : logo" x="980" y="980" height="200" width="200" filter="url(#dropshadow)"/>
 
   </g>
 

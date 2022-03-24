@@ -55,6 +55,22 @@
       "properties": {
 
       }
+    },
+    {
+      "type": "selection",
+      "description": "Logo",
+      "key": "logo",
+      "properties": {
+        "items": [
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-2.svg"
+          },
+          {
+            "type": "file"
+          }
+        ]
+      }
     }
   ]
 }

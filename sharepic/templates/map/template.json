@@ -48,7 +48,7 @@
       "type": "map",
       "description": "Route",
       "key": "route",
-      "default": "sharepic/templates/map/bg.jpg",
+      "default": "sharepic/templates/map/default.jpg",
       "properties": {
         "center": {
           "latitude": 50.0035,

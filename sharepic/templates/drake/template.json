@@ -8,12 +8,6 @@
       "height": 1200,
       "src": "sharepic/templates/drake/1200x1200.svg",
       "alias": "Facebook, Instagram"
-    },
-    {
-      "width": 1200,
-      "height": 675,
-      "src": "sharepic/templates/drake/1200x675.svg",
-      "alias": "Twitter"
     }
   ],
   "fonts": [
@@ -105,6 +99,30 @@
       "default": "www.fffulm.de   #fridaysforfuture",
       "properties": {
 
+      }
+    },
+    {
+      "type": "selection",
+      "description": "Logo",
+      "key": "logo",
+      "properties": {
+        "items": [
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-2.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-3.svg"
+          },
+          {
+            "type": "file"
+          }
+        ]
       }
     }
   ]

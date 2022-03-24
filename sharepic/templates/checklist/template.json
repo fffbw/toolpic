@@ -66,6 +66,21 @@
       }
     },
     {
+      "type": "checklist",
+      "description": "Social Media:",
+      "key": "platforms",
+      "default": [
+        true,
+        true,
+        true],
+      "properties": {
+        "fields": [
+          "Instagram",
+          "Facebook",
+          "Twitter"]
+      }
+    },
+    {
       "type": "line",
       "description": "Instagram Account",
       "key": "instagramacc",
@@ -83,6 +98,15 @@
 
       }
     },
+    {
+      "type": "line",
+      "description": "Twitter Account",
+      "key": "twitteracc",
+      "default": "@FridaysForFutureMainz",
+      "properties": {
+
+      }
+    },
     
     {
       "type": "selection",
@@ -93,6 +117,14 @@
           {
             "type": "value",
             "value": "sharepic/resources/logo.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-2.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-3.svg"
           },
           {
             "type": "file"

@@ -4,7 +4,7 @@ ogs=$(cat regiotemp.txt | sed -n '$=')
 echo "Download erfolgreich, $ogs OGs vorhanden"
 echo "{
   \"name\": \"Bw-Karte\",
-  \"root\": \"https://sanojkl.ddns.net/toolpic/sharepic/templates/bw/template.json\",
+  \"root\": \"https://toolpic.fridaysforfuture.de/sharepic/templates/bw/template.json\",
   \"preview\": \"sharepic/templates/bw/preview.jpg\",
   \"documents\": [
     {
@@ -42,34 +42,7 @@ echo "{
     }
   ],
   \"fields\": [
-    {
-      \"type\": \"selection\",
-      \"description\": \"Background\",
-      \"key\": \"backgroundImage\",
-      \"default\": {
-        \"value\": \"sharepic/templates/bw/bg.jpg\"
-      },
-      \"properties\": {
-        \"items\": [
-          {
-            \"type\": \"file\"
-          }
-        ]
-      }
-    },
-    {
-      \"type\": \"number\",
-      \"description\": \"Position\",
-      \"key\": \"pos\",
-      \"default\": 0,
-      \"properties\": {
-        \"value\": 0,
-        \"max\": 1,
-        \"min\": -1,
-        \"step\": 0.05,
-        \"kind\": \"slider\"
-      }
-    },
+    
 	{
       \"type\": \"line\",
       \"description\": \"Datum\",
@@ -100,9 +73,9 @@ echo "<svg xmlns=\"http://www.w3.org/2000/svg\"
      viewBox=\"0 0 1200 1200\"
      version=\"1.1\">
  <g class=\"main\">
-    <image v-if=\"typeof backgroundImage == 'object'\" v-bind:xlink:href=\"backgroundImage.value\" v-fitimage v-bind:data-image-pos=\"pos\" style=\"transform-origin: 50% 50%;\" />
+    <image xlink:href=\"sharepic/templates/bw/default.jpg\" x=\"0\" y=\"0\" height=\"1200\" width= \"1200\" />
 	<g>
-	    <image xlink:href=\"sharepic/resources/logobw.png\" x=\"80\" y=\"250\" height=\"260\" width=\"260\" />
+	    <image xlink:href=\"sharepic/templates/bw/logobw.png\" x=\"80\" y=\"250\" height=\"260\" width=\"260\" />
         </g>
 	<g>
 	 <text x=\"45\" y=\"160\" style=\"fill: #1DA64A; font-family: 'Jost'; font-size: 130px;\" >Demos am</text>
@@ -110,7 +83,7 @@ echo "<svg xmlns=\"http://www.w3.org/2000/svg\"
 	 <text x=\"700\" y=\"160\" style=\"fill: #1DA64A; font-family: 'Jost'; font-size: 130px;\" >{{ date }}</text>
 	</g>" > 1200x1200.svg
 
-cat regiotemp.txt | sed -r 's/^[^:]*:([^,]*),"lon":([^,]*),/\1 \2 /g' | sed = | sed 'N;s/\n/ /' | sed -r 's/^(\S*)\s(\S*)\s(\S*)/\2 \3 \1/g' | sort -r | sed -r -e 's/^(\S*)\s(\S*)\s(\S*).*/(echo \"\1 * (-412.672) + 20748.16 \" | bc ; echo \" \2 * 277.655 - 1907.038  \" | bc ; echo \3 - 1 | bc )/ge' -e  's/\n/ /' -e  's/\n/ /'  -e 's/^(\S*)\s(\S*)\s(\S*).*/<g v-if="locations\[\3\]"><image xlink:href="sharepic\/resources\/marker50.png" x="\2" y="\1" height="50" width="32" \/><\/g>/' >>1200x1200.svg
+cat regiotemp.txt | sed -r 's/^[^:]*:([^,]*),"lon":([^,]*),/\1 \2 /g' | sed = | sed 'N;s/\n/ /' | sed -r 's/^(\S*)\s(\S*)\s(\S*)/\2 \3 \1/g' | sort -r | sed -r -e 's/^(\S*)\s(\S*)\s(\S*).*/(echo \"\1 * (-412.672) + 20748.16 \" | bc ; echo \" \2 * 277.655 - 1907.038  \" | bc ; echo \3 - 1 | bc )/ge' -e  's/\n/ /' -e  's/\n/ /'  -e 's/^(\S*)\s(\S*)\s(\S*).*/<g v-if="locations\[\3\]"><image xlink:href="sharepic\/templates\/bw\/marker50.png" x="\2" y="\1" height="50" width="32" \/><\/g>/' >>1200x1200.svg
 echo "  </g>
 </svg>" >>1200x1200.svg
 echo 1200x1200.svg generiert

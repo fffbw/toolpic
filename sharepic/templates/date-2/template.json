@@ -49,7 +49,7 @@
       "description": "Background",
       "key": "backgroundImage",
       "default": {
-        "value": "sharepic/templates/date-2/bg.jpg"
+        "value": "sharepic/templates/date-2/default.jpg"
       },
       "properties": {
         "items": [

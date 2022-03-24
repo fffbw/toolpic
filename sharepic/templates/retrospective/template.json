@@ -43,7 +43,7 @@
       "description": "Background",
       "key": "backgroundImage",
       "default": {
-        "value": "sharepic/templates/retrospective/bg2.jpg"
+        "value": "sharepic/templates/retrospective/default.jpg"
       },
       "properties": {
         "items": [
@@ -152,6 +152,10 @@
           {
             "type": "value",
             "value": "sharepic/resources/logo-2.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-3.svg"
           },
           {
             "type": "file"

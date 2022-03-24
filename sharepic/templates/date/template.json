@@ -1,5 +1,5 @@
 {
-  "name": "Date 1",
+  "name": "Date",
   "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/date/template.json",
   "preview": "sharepic/templates/date/preview.jpg",
   "documents": [
@@ -100,11 +100,11 @@
         "items": [
           {
             "type": "value",
-            "value": "sharepic/resources/logo-2.svg"
+            "value": "sharepic/resources/logo.svg"
           },
           {
             "type": "value",
-            "value": "sharepic/resources/logo.svg"
+            "value": "sharepic/resources/logo-2.svg"
           },
           {
             "type": "value",
