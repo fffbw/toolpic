@@ -1,5 +1,16 @@
 # Sharepicify
 
+##  Toolpic FFF BW
+Modifizierte Version des Toolpic nach der [LGPL-Lizenz](LICENSE.txt), mit vielen Modifizierten und ergänzten Templates.
+
+Credits:
+
+Maurice Conrad - Originaler Urheber der Software
+FFF Ulm - https://github.com/fffulm/fffulm.github.io für einige Templates
+
+
+
+
 ## Templates erstellen
 
 **Wichtig:** Die Templates greifen über [Vue.js](https://vuejs.org) auf einen Datensatz zu. Um also das SVG Template mit dynamischen Variablen zu besetzen, kann auf jede Art der Vue.js Syntax zurückgegriffen werden.
@@ -204,11 +215,15 @@ Für weitere Details lohnt sich ein Blick in die bestehenden Templates ;-)
 
 ## OGS UPDATEN
 ./sharepic/templates/bw/regio.sh
+
 47,6120896*x+y=1100
+
 49,7614982*x+y=213
 
 geo*x*y= pixel
+
 lörrach und wertheim
 
 7,6607218*x+y=220
+
 9,5155411*x+y=735
