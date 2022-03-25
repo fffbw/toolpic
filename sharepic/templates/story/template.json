@@ -1,0 +1,159 @@
+{
+  "name": "Story",
+  "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/story/template.json",
+  "preview": "sharepic/templates/story/preview.jpg",
+  "documents": [
+    {
+      "width": 1080,
+      "height": 1920,
+      "src": "sharepic/templates/story/1080x1920.svg",
+      "alias": "Instagram Story"
+    }
+  ],
+  "fonts": [
+    {
+      "name": "Jost",
+      "src": "fonts/Jost/Jost-600-Semi.ttf",
+      "mime": "font/truetype"
+    },
+    {
+      "name": "Jost-400",
+      "src": "fonts/Jost/Jost-400-Book.ttf",
+      "mime": "font/truetype"
+    },
+    {
+      "name": "Merriweather",
+      "src": "fonts/Merriweather Sans.ttf",
+      "mime": "font/truetype"
+    }
+  ],
+  "fields": [
+    {
+      "type": "selection",
+      "description": "Background",
+      "key": "backgroundImage",
+      "default": {
+        "value": "sharepic/templates/story/default.jpg"
+      },
+      "properties": {
+        "items": [
+          {
+            "type": "file"
+          }
+        ]
+      }
+    },
+    {
+      "type": "number",
+      "description": "Position",
+      "key": "pos",
+      "default": 0,
+      "properties": {
+        "value": 0,
+        "max": 1,
+        "min": -1,
+        "step": 0.05,
+        "kind": "slider"
+      }
+    },
+    {
+      "type": "selection",
+      "description": "Background Color",
+      "key": "bgColor",
+      "default": "#1B7340",
+      "properties": {
+        "items": [
+          {
+            "type": "value",
+            "value": "#1B7340",
+            "render": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMxQjczNDAiLz48L3N2Zz4="
+          },
+          {
+            "type": "value",
+            "value": "#1DA64A",
+            "render": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMxREE2NEEiLz48L3N2Zz4="
+          }
+        ]
+      }
+    },
+    {
+      "type": "number",
+      "description": "Transparent",
+      "key": "opacity",
+      "default": 0.7,
+      "properties": {
+        "value": 0.7,
+        "max": 1,
+        "min": 0,
+        "kind": "slider",
+        "step": 0.01
+      }
+    },
+    {
+      "type": "selection",
+      "description": "Text Background",
+      "key": "textBg",
+      "default": "#1B7340",
+      "properties": {
+        "items": [
+          {
+            "type": "value",
+            "value": "#1B7340",
+            "render": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMxQjczNDAiLz48L3N2Zz4="
+          },
+          {
+            "type": "value",
+            "value": "#1DA64A",
+            "render": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMxREE2NEEiLz48L3N2Zz4="
+          }
+        ]
+      }
+    },
+
+    {
+      "type": "text",
+      "description": "Title",
+      "key": "title",
+      "default": ["WIR STREIKEN", "BIS IHR", "HANDELT!"],
+      "properties": {
+
+      }
+    },
+    
+    {
+      "type": "checklist",
+      "description": "Logo anzeigen:",
+      "key": "showLogo",
+      "default": [
+        true],
+      "properties": {
+        "fields": [
+          "Aktivieren"]
+      }
+    },
+    {
+      "type": "selection",
+      "description": "Logo",
+      "key": "logo",
+      "properties": {
+        "items": [
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-2.svg"
+          },
+          {
+            "type": "value",
+            "value": "sharepic/resources/logo-3.svg"
+          },
+          {
+            "type": "file"
+          }
+        ]
+      }
+    }
+  ]
+}

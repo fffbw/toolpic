@@ -30,6 +30,7 @@ const instances = {
 	    "sharepic/templates/alert/template.json",
 	    "sharepic/templates/bw/template.json",
       "sharepic/templates/demobild/template.json",
+      "sharepic/templates/story/template.json",
       "sharepic/templates/theländ/template.json",
       "sharepic/templates/drake/template.json",
       "sharepic/templates/meme/template.json"
