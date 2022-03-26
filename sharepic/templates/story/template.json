@@ -80,9 +80,9 @@
       "type": "number",
       "description": "Transparent",
       "key": "opacity",
-      "default": 0.7,
+      "default": 1,
       "properties": {
-        "value": 0.7,
+        "value": 1,
         "max": 1,
         "min": 0,
         "kind": "slider",
@@ -91,44 +91,56 @@
     },
     {
       "type": "selection",
-      "description": "Text Background",
-      "key": "textBg",
-      "default": "#1B7340",
+      "description": "Background Position",
+      "key": "bgType",
+      "default": "-960",
       "properties": {
         "items": [
           {
             "type": "value",
-            "value": "#1B7340",
-            "render": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMxQjczNDAiLz48L3N2Zz4="
+            "value": "0",
+            "render": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMxREE2NEEiLz48L3N2Zz4="
           },
           {
             "type": "value",
-            "value": "#1DA64A",
-            "render": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMxREE2NEEiLz48L3N2Zz4="
+            "value": "-960",
+            "render": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjUwJSIgZmlsbD0iIzFEQTY0QSIvPjxyZWN0IHg9IjAiIHk9IjUwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iNTAlIiBmaWxsPSIjMzAzMDMwIi8+PC9zdmc+"
+          },
+          {
+            "type": "value",
+            "value": "960",
+            "render": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxyZWN0IHg9IjAiIHk9IjUwJSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iNTAlIiBmaWxsPSIjMURBNjRBIi8+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iNTAlIiBmaWxsPSIjMzAzMDMwIi8+PC9zdmc+"
           }
         ]
       }
     },
-
     {
       "type": "text",
-      "description": "Title",
-      "key": "title",
-      "default": ["WIR STREIKEN", "BIS IHR", "HANDELT!"],
+      "description": "Text oben",
+      "key": "textoben",
+      "default": ["SPONTANDEMO", "GERICHTSURTEIL"],
       "properties": {
-
       }
     },
-    
+    {
+      "type": "text",
+      "description": "Text unten",
+      "key": "textunten",
+      "default": ["18:00 Uhr", "Bahnhof"],
+      "properties": {
+      }
+    },
     {
       "type": "checklist",
-      "description": "Logo anzeigen:",
-      "key": "showLogo",
+      "description": "Optionen:",
+      "key": "options",
       "default": [
+        true,
         true],
       "properties": {
         "fields": [
-          "Aktivieren"]
+          "show Logo",
+          "smooth Background"]
       }
     },
     {
