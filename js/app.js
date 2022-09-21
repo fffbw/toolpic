@@ -12,8 +12,9 @@ const instances = {
     templates: [
       "sharepic/templates/date/template.json",
       "sharepic/templates/date-2/template.json",
-	    "sharepic/templates/date-3/template.json",
+      "sharepic/templates/date-3/template.json",
       "sharepic/templates/info/template.json",
+      "sharepic/templates/info2/template.json",
       "sharepic/templates/checklist/template.json",
       "sharepic/templates/pride/template.json",
       "sharepic/templates/countdown/template.json",
@@ -22,13 +23,13 @@ const instances = {
       "sharepic/templates/influence/template.json",
       "sharepic/templates/imperative/template.json",
       "sharepic/templates/sentence/template.json",
-	    "sharepic/templates/sentence2/template.json",
+      "sharepic/templates/sentence2/template.json",
       "sharepic/templates/fff/template.json",
-	    "sharepic/templates/quote2/template.json",
+      "sharepic/templates/quote2/template.json",
       "sharepic/templates/quote3/template.json",
-	    "sharepic/templates/retrospective/template.json",
-	    "sharepic/templates/alert/template.json",
-	    "sharepic/templates/bw/template.json",
+      "sharepic/templates/retrospective/template.json",
+      "sharepic/templates/alert/template.json",
+      "sharepic/templates/bw/template.json",
       "sharepic/templates/demobild/template.json",
       "sharepic/templates/story/template.json",
       "sharepic/templates/theländ/template.json",
@@ -55,7 +56,7 @@ const footerApp = new Vue({
     }).filter(instance => !instance.hidden)
   }
 });
-window.addEventListener("hashchange", function(event) {
+window.addEventListener("hashchange", function (event) {
   window.location.reload();
 });
 
@@ -163,10 +164,10 @@ const exportController = new Vue({
 
 
 function get(url) {
-  return new Promise(function(resolve, reject) {
+  return new Promise(function (resolve, reject) {
     const xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
-    xhr.addEventListener("load", function() {
+    xhr.addEventListener("load", function () {
       resolve(this.response);
     });
     xhr.send();
@@ -174,12 +175,12 @@ function get(url) {
 }
 
 
-String.prototype.hashCode = function() {
+String.prototype.hashCode = function () {
   var hash = 0, i, chr;
   if (this.length === 0) return hash;
   for (i = 0; i < this.length; i++) {
-    chr   = this.charCodeAt(i);
-    hash  = ((hash << 5) - hash) + chr;
+    chr = this.charCodeAt(i);
+    hash = ((hash << 5) - hash) + chr;
     hash |= 0; // Convert to 32bit integer
   }
   return hash;

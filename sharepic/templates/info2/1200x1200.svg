@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+
+     viewBox="0 0 1200 1200"
+     version="1.1">
+
+
+
+
+
+  <g class="main">
+
+    <rect x="0" y="0" width="100%" height="100%" style="fill: #fff;"/>
+
+    <g v-dynamic data-dynamic-origin="none" data-dynamic-width="1100" data-dynamic-height="200" style="transform-origin: 50px 50px;">
+      <text style="font-size: 95px; font-family: 'Jost'; fill: #FFF;" x="50" y="50" alignment-baseline="hanging">
+        {{ subtitle }}
+      </text>
+    </g>
+
+    <!--
+
+      500 / (180 + (textInfo(line.toUpperCase(), { fontFamily: 'Jost', fontSize: '150px' }).height - 60) * title.length)
+
+    -->
+
+    <g v-dynamic data-dynamic-origin="none" data-dynamic-width="1100" data-dynamic-height="700" style="transform-origin: 50px 180px;">
+      <text style="font-size: 135px; font-family: 'Jost'; fill: #FFF;" x="50" v-bind:y="180 + (textInfo(line.toUpperCase(), { fontFamily: 'Jost', fontSize: '135px' }).height - 50) * title.indexOf(line)" alignment-baseline="hanging" v-for="line in title">
+        {{ line }}
+      </text>
+    </g>
+
+
+  </g>
+
+
+</svg>
