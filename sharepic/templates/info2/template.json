@@ -1,5 +1,5 @@
 {
-  "name": "Info",
+  "name": "Info 2",
   "root": "https://toolpic.fridaysforfuture.de/sharepic/templates/info2/template.json",
   "preview": "sharepic/templates/info2/preview.jpg",
   "documents": [
@@ -27,17 +27,23 @@
       "type": "line",
       "description": "Subtitle",
       "key": "subtitle",
-      "default": "FridaysForFuture fordert:"
+      "default": "Demos am Freitag"
     },
     {
       "type": "text",
       "description": "Title",
       "key": "title",
       "default": [
-        "Einhaltung der",
-        "Nettonull für",
-        "Treibhausgase",
-        "bis 2035."
+        "Filderstadt 1330 Uhr Bernhausen Bahnhof",
+        "Freiburg 11 Uhr Platz der alten Synagoge",
+        "Freudenstadt 13 Uhr unterer Marktplatz",
+        "Friedrichshafen 14 Uhr Franziskusplatz",
+        "Göppingen 14 Uhr Schillerplatz",
+        "Heidelberg 16 Uhr Breidenbach Studios",
+        "Heidenheim 12 Uhr Bahnhof",
+        "Heilbronn 12 Uhr Bollwerksturm",
+        "Herrenberg 13:30 Uhr Bahnhof",
+        "Karlsruhe 11:30 Uhr city park"
       ],
       "properties": {}
     }
